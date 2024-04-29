@@ -1,0 +1,14 @@
+<section class="posts-form">
+  <h1 class="edit-header">Form Creation</h1>
+  <div>
+    <form action="<%= posts_path %>" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <sl-input label="Title" name="post[title]" class="post-title"></sl-input>
+      <sl-textarea label="Description" name="post[description]"></sl-textarea>
+      <section class="submit-section">
+        <sl-button variant="primary" size="large"  class="btn-submit" type="submit">Submit</sl-button>
+      </section>
+    </form>
+  </div>
+</section>
+

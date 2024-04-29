@@ -1,0 +1,23 @@
+<section class="details">
+  <h1 class="details-header">Details of the post</h1>
+  <sl-details class="details-summary" summary="<%= @post.title %>">
+    <%= @post.description %>
+  </sl-details>
+  <p class="details-create">
+    Created: <%= time_ago_in_words @post.created_at %> ago
+  </p>
+
+  <section class="details-buttons">
+    <a href="<%= edit_post_url(@post) %>">
+      <sl-button size="large" variant="primary">
+        EDIT POST
+      </sl-button>
+    </a>
+    <a href="<%= posts_url %>">
+      <sl-button size="large" variant="primary">
+        ALL POSTS
+      </sl-button>
+    </a>
+  </section>
+
+</section>

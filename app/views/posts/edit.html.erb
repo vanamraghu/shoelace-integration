@@ -1,0 +1,15 @@
+<section class="edit-form">
+  <h1 class="edit-header">EDIT Form</h1>
+  <form action="<%= post_path(@post) %>" method="post">
+    <input type="hidden" name="_method" value="patch">
+    <!-- CSRF Token for authenticity -->
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <sl-input class="edit-post-title" label="Title" name="post[title]" value="<%= @post.title %>"></sl-input>
+    <sl-textarea class="edit-post-desc" label="Description" name="post[description]" value="<%= @post.description %>"></sl-textarea>
+    <section class="submit-section">
+      <sl-button variant="primary" size="large"  class="btn-submit" type="submit">
+        SAVE
+      </sl-button>
+    </section>
+  </form>
+</section>

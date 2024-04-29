@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* custom.css */
+.post-title {
+    --font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.submit-section {
+    text-align: center;
+}
+
+.btn-submit {
+    margin-top: 2rem;
+}
+
+.header-list {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.body {
+    background: linear-gradient(to right, #f953c6, #b91d73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Rubik", sans-serif;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 6px solid fuchsia;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.no-posts {
+    text-align: center;
+}
+
+.posts-details {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-basic {
+    background-color: #93817e
+}
+
+.posts-form {
+    border: 6px solid fuchsia;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.user-avatar {
+    font-size: 24px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-container {
+    margin-bottom: 1rem;
+    width: 150px;
+}
+
+.sign-out-container {
+    margin-bottom: 1rem;
+    width: 150px;
+}
+
+.sign-up-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 6px solid fuchsia;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-header {
+    text-align: center;
+}
+
+.sign-up-form {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.btn-signup {
+    margin-top: 1rem;
+    width: 100px;
+    text-align: center;
+}
+
+.btn-login {
+    margin-top: 1rem;
+    width: 100px;
+}
+
+.sign-up-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.password {
+    margin-bottom: 10px;
+}
+
+.login-section {
+    padding: 2rem;
+    border: 6px solid fuchsia;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.flash {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.flash.notice {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.flash.alert {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.details {
+    padding: 2rem;
+    border: 6px solid fuchsia;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.details-header {
+    margin-bottom: 10px;
+}
+
+.details-summary {
+    margin-bottom: 20px;
+}
+
+.details-create {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.details-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edit-form {
+    border: 6px solid fuchsia;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.edit-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-post-title {
+    margin-bottom: 20px;
+}
+
+.edit-post-desc {
+
+}

@@ -1,0 +1,54 @@
+<section class="posts">
+  <h1 class="header-list">Posts List</h1>
+  <sl-divider style="--color: #93817e;--width: 5px;"></sl-divider>
+  <section class="posts-details">
+    <% if @posts.empty? %>
+      <sl-alert class="no-posts" variant="danger" open>
+        <strong>No Posts</strong><br />
+        Please login to create posts
+      </sl-alert>
+    <% else %>
+      <% @posts.each do |post| %>
+        <sl-card class="card-header">
+          <div slot="header">
+            Title: <%= link_to post.title, post_url(post) %>
+          </div>
+          <sl-avatar
+            label="User avatar"
+            image=<%= profile_url(post) %>
+          ></sl-avatar>
+          <p class="user-avatar">
+            <%= post.user.username %>
+          </p>
+        </sl-card>
+      <% end %>
+    <% end %>
+  </section>
+
+  <section class="buttons">
+    <div class="post-container">
+      <a href="<%= new_post_url %>">
+        <sl-button size="large" variant="primary" style="width:100%">
+          CREATE POST
+        </sl-button>
+      </a>
+    </div>
+
+    <div class="sign-out-container">
+      <% if user_signed_in? %>
+        <a href="<%= sessions_path %>" data-turbo-method="delete">
+          <sl-button size="large" variant="danger" style="width:100%">
+            SIGN OUT
+          </sl-button>
+        </a>
+        <% else %>
+        <a href="<%= new_sessions_path %>">
+          <sl-button size="large" variant="primary" style="width:100%">
+            LOG IN
+          </sl-button>
+        </a>
+      <% end %>
+    </div>
+  </section>
+</section>
+

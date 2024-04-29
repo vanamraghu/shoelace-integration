@@ -1,0 +1,18 @@
+<section class="sign-up-section">
+  <h1 class="sign-up-header">SignUp</h1>
+  <section class="sign-up-form">
+    <form action="<%= users_path %>" method="post" >
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <sl-input class="username" label="UserName" name="user[username]"></sl-input>
+      <sl-input type="password" class="password" label="Password" name="user[password]"></sl-input>
+      <section class="sign-up-buttons">
+        <sl-button variant="primary"  class="btn-signup" type="submit">SignUp</sl-button>
+        <a href="<%= new_sessions_path %>">
+          <sl-button variant="primary" class="btn-login">LogIn</sl-button>
+        </a>
+      </section>
+    </form>
+  </section>
+</section>
+
+
