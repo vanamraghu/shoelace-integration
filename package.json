@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2",
+    "@hotwired/turbo-rails": "^8.0.4",
+    "@shoelace-style/shoelace": "^2.15.0",
+    "esbuild": "^0.20.2"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/application.js --bundle --minify --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  }
+}
